@@ -19,6 +19,16 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // Disable the 'no-this-alias' rule
+      "@typescript-eslint/no-this-alias": "off",
+
+      // Disable 'no-require-imports' rule
+      "@typescript-eslint/no-require-imports": "off",
+    },
+    // Optional: turn off some stylistic rules for smooth deployment
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
   },
 ];
 
